@@ -1,0 +1,673 @@
+/* ================================
+   Default Styles (style.css)
+   ================================ */
+
+/* Reset default margin & padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  overflow-x: hidden;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  background: #fff;
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+}
+
+/* Lists */
+li {
+  list-style: none;
+  display: inline-block;
+}
+
+/* Links */
+a {
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+a:hover,
+a:active {
+  text-decoration: none;
+}
+
+/* Headings */
+h1, h2, h3 {
+  font-family: 'PT Sans Narrow', Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+/* Buttons */
+.btn {
+  transition: all 300ms ease-in-out;
+  font-weight: 500 !important;
+  text-transform: uppercase;
+}
+.btn:hover {
+  background-color: #444 !important;
+  color: #fff !important;
+  border: 2px solid #fff !important;
+}
+
+ /* Default styles end here */
+
+/* Navigation styling */
+.navbar {
+    background-color: #222220 !important;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-bottom: 2px;
+    border-bottom: 2px solid #222220;
+}
+
+.navbar a:hover {
+    border-bottom: 2px solid #D34747;
+}
+/* Fix media query */
+@media (max-width: 768px) {
+    .navbar a:hover {
+        border-bottom: none;
+    }	
+}
+/*login btn css begain here */
+#login-dp{
+	min-width: 250px;
+	padding: 14px 14px 0;
+	overflow: hidden;
+	background-color: rgba(255,255,255,0.8);
+}
+b{
+	font-weight: 400;
+}
+#login-dp .help-block{
+	font-size: 12px;
+}
+#login-dp .bottom{
+	background-color: rgba (255,255,255,0.9);
+	border-top: 1px solid #ddd;
+	clear: both;
+	padding: 10px;
+}
+#login-dp .social-buttons{
+	margin: 12px 0;
+}
+#login-dp .social-buttons{
+	width: 49px;
+}
+#login-dp .form-group{
+	margin-bottom: 10px;
+}
+/* Facebook Button */
+.btn-fb, .btn-tw {
+    display: block;
+    width: 100%;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px;
+    margin-bottom: 10px; /* space between FB and TW */
+    border-radius: 4px;  /* rounded corners */
+    border: none;
+    transition: background-color 0.3s ease; /* smooth hover */
+}
+.btn-fb {
+    color: #fff;
+    background-color: #3b5998; /* Facebook blue */
+}
+.btn-fb:hover {
+    background-color: #2d4373; /* darker Facebook blue */
+}
+
+/* Twitter Button */
+.btn-tw {
+    color: #fff;
+    background-color: #55acee; /* Twitter blue */
+}
+.btn-tw:hover {
+    background-color: #2795e9; /* darker Twitter blue */
+}
+.or-divider {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 5px 0;
+}
+
+.or-divider hr {
+  flex: 1;
+  border: none;
+  border-top: 1px solid #ddd; /* the visible lines */
+}
+
+.or-divider span {
+  color: #777;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+
+/* Signup Button */
+#signup-btn {
+    background-color: #434747;
+    border: 0;
+    border-radius: 4px;
+    height: 2.5em; /* fixed unit */
+	width: 100%;
+    color: #fff;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+#signup-btn:hover {
+    background-color: #2e3131; /* slightly darker on hover */
+}
+@media (max-width: 768px) {
+	#login-dp{
+		background-color: inherit;
+		color: #fff;
+	}
+	#login-dp .bottom{
+		background-color: inherit;
+		border-top: 0 none;
+	}
+}
+
+/* Header Section */
+.header {
+  background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)),
+                    url("../images/devsland img1.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh; /* full screen height */
+  display: flex;
+  align-items: center;  /* vertical centering */
+  text-align: center;
+}
+
+/* Headings */
+/* Headings */
+.header h1 {
+  color: #fff;
+  font-size: 70px;
+  font-family: 'Roboto', sans-serif;
+  position: relative;   /* make h1 the positioning parent */
+  display: inline-block; /* keep ® aligned properly */
+}
+
+.header h3 {
+  color: #fff;
+  text-align: center;
+}
+
+/* Default style for ® */
+.reg-mark sup {
+  font-size: 20px;
+  color: #fff;
+  margin-left: 5px;
+  position: relative;
+  top: -10px;
+}
+
+/* Fix ® on mobile */
+@media (max-width: 576px) {
+  .header h1 {
+    font-size: 40px;  /* smaller heading for mobile */
+  }
+
+  .reg-mark sup {
+    font-size: 14px;       /* smaller ® */
+    top: -8px;             /* adjust vertical */
+    position: absolute;    /* anchor inside h1 */
+    right: -20px;          /* push to right of heading */
+    margin-left: 0;
+  }
+}
+/* Button group */
+.btn-grp {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+/* Red button (Get Started) */
+#aa {
+  background-color: #d34747;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 4px;
+  padding: 10px 25px;
+  transition: background-color 0.3s ease;
+}
+#aa:hover {
+  background-color: #b83636;
+}
+
+/* Green button (View Details) */
+#bb {
+  background-color: #36a73a;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 4px;
+  padding: 10px 25px;
+  transition: background-color 0.3s ease;
+}
+#bb:hover {
+  background-color: #2d8c30;
+}
+/* Button group */
+.btn-grp {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+  flex-wrap: wrap; /* ✅ buttons wrap if screen too small */
+}
+
+.btn-grp .btn {
+  min-width: 120px;    /* ✅ smaller min width */          
+  text-align: center;
+  padding: 10px 20px;
+}
+
+/* Mobile optimization */
+@media (max-width: 576px) {
+  .btn-grp {
+    gap: 10px;  /* ✅ smaller gap */
+  }
+
+  .btn-grp .btn {
+    flex: unset;       /* ✅ buttons size naturally */
+    width: auto;       /* ✅ avoid full width */
+    font-size: 14px;   /* ✅ smaller font on mobile */
+    padding: 8px 16px; /* ✅ compact buttons */
+  }
+}
+.services{
+	padding: 80px;
+	text-align: center;
+}
+.services h1,.services h3{
+	padding-top: 20px 0 0 20px;
+	color: #4c4c4c;
+}
+.services h4{
+	margin-top: 30px;
+}
+.services p{
+	font-size: 14px;
+	padding-bottom: 40px;
+	color: #737373;
+}
+.services i{
+	height: 80px;
+	width: 80px;
+	font-size: 35px;
+	padding: 25px 20px;
+	border-radius: 50px;
+	background-color: #d34747;
+	color: white;
+}
+.services{
+	margin-top: 30px;
+}
+.services p{
+	margin-top: 20px;
+}
+@media(max-width: 768px;){
+.services{
+	margin-top: 50px;
+	padding: 50px;
+}	
+}
+.sales{
+	padding: 150px 50px 60px 80px;
+	min-height: 600px;
+	margin-top: 150px;
+	color: #fff;
+	background-color:#222220;
+}
+.sales #left-side img{
+	height:150px;
+	width: 400px;
+	min-height: 300px;
+	display: inline-block;
+	  mix-blend-mode: multiply; /* removes white overlay look */
+
+}
+.sales #left-side img:hover {
+  transform: scale(1.05);          /* slightly zoom in */
+  filter: drop-shadow(0 0 12px #ff0000); /* glowing red shadow */
+}
+.sales #right-side{
+	margin-bottom: 50px;
+}
+.sales #right-side h1{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 30px;
+	font-weight: 700; /* bold */
+  line-height: 1.3; /* prevents text from overlapping */
+  margin-bottom: 15px; /* space after heading */
+}
+.sales #right-side p{
+	font-size: 17px;
+	text-align: justify;
+	line-height: 30px;
+	margin-top: 20px;
+}
+
+@media(max-width: 768px;){
+	.sales{
+		padding: 30px;
+		min-height: 500px;
+		margin-top: -10px;
+	}
+	.sales #right-side h1{
+		font-size: 25px;
+	}
+}
+
+/* pricing section css */
+.pricing {
+  padding: 50px 80px;
+  text-align: center;
+  background-color: #bf5353;
+}
+
+.pricing h2,
+.pricing p {
+  color: #fff;
+}
+
+.pricing p {
+  padding: 20px 0 40px;
+}
+
+.pricing .packages {
+  padding: 30px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #fff;
+  margin-top: 30px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.packages:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.packages li {
+  display: block;
+  padding: 5px;
+}
+
+.packages h4,
+.packages h1,
+.packages b {
+  color: #4c4c4c;
+}
+
+.packages p,
+.packages li {
+  color: #737373;
+}
+
+.packages button {
+  margin-top: 10px;
+}
+
+/* Responsive */
+@media (max-width: 546px) {
+  .pricing {
+    padding: 50px 0;
+  }
+  .packages {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+/*mission section css */
+.mission{
+	padding: 80px;
+	min-height: 600px;
+	padding-top:120px; 
+}
+.mission #left-side{
+	margin-bottom: 50px;
+}
+.mission #left-side h1{
+	font-family: 'Montserrat',sans-serif;
+	font-size: 30px;
+	  line-height: 1.3; /* prevents text from overlapping */
+  margin-bottom: 15px; /* space after heading */
+}
+.mission #left-side p{
+	margin-top: 20px;
+	font-size: 17px;
+	text-align: justify;
+	line-height: 30px;
+}
+.mission #right-side img{
+	min-height: 500px;
+	width:650px;
+	margin-left: 120px;
+}
+@media(max-width: 834px;){
+	.mission{
+		padding: 80px;
+		min-height: 600px;
+		margin-top: 20px;
+		padding-right: 20px;
+		padding-left: 20px;
+	}
+	.mission #right-side img{
+		margin-top: 60px;
+		height: 100%;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.mission #left-side h1{
+		font-size: 17px;
+	}
+}
+/*client section css */
+.clients{
+	padding: 50px 0 80px;
+	background-color: #bf5353;
+	text-align: center;
+	color: #fff;
+}
+.team h2 {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px; /* increase spacing below heading */
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+.clients p{
+	padding-bottom: 40px;
+}
+.clients img{
+	width: 200px;
+	cursor: pointer;
+	margin: 40px 0;
+}
+@media(max-width: 768px;){
+	.clients p{
+	margin-left: 20px;
+	margin-right: 20px;
+	}
+}
+
+/* Team section css */
+.team {
+  padding: 50px 0 80px;
+  background-color: #222; /* dark background for white text */
+  text-align: center;
+  color: #fff;
+}
+
+.team h2 {
+  color: #fff;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.team p {
+  padding-bottom: 40px;
+  font-size: 16px;
+}
+
+.team img {
+  height: 220px;
+  width: 220px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 20px 0;
+  transition: transform 0.3s ease;
+}
+
+.team img:hover {
+  transform: scale(1.05);
+}
+
+.team h3 {
+  color: #fff;
+  margin-top: 10px;
+  font-size: 18px;
+}
+.team i{
+  font-size: 17px;
+  height: 30px;
+  width: 30px;
+  padding: 5px;
+  border-radius: 50%;
+  background-color:#a9db8e;
+}
+@media (max-width: 768px) {
+  .team p {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+/* contact section css begain here */
+.contacts {
+    padding: 50px 0px 80px;
+    text-align: center;
+    background-color: #bf5353;
+}
+
+.contacts p {
+    padding-bottom: 70px;
+    color: #fff;
+    margin: 20px 0 20px;
+}
+
+.contacts .input-group {
+    margin-bottom: 25px !important;
+}
+
+.contacts .form-control {
+    border-radius: 0 !important;
+}
+
+.contacts span {
+    border-radius: 0;
+}
+
+.contacts .btn {
+    margin-top: 12px;
+    border-radius: 0;
+    width: 100%;
+    font-size: 15px;
+    background-color: #f08080;
+}
+
+.contacts .btn:hover {
+    background-color: #a85959 !important;
+    color: #fff !important;
+}
+/* footer section css begain here */
+
+.footer {
+  padding: 50px 0 80px;
+  background-color: #222; /* dark background for white text */
+  color: #fff;
+}
+.footer p {
+    padding-bottom: 70px;
+    color: #fff;
+    margin: 20px 0 20px;
+}
+.contact1 i{
+  font-size: 17px;
+  height: 30px;
+  width: 30px;
+  padding: 5px;
+}
+.col-lg-4.col-md-4 i{
+  font-size: 17px;
+  height: 30px;
+  width: 30px;
+  padding: 5px;
+}
+.subscribe-box {
+  display: flex;
+  margin-top: 10px;
+}
+
+.subscribe-box .form-control-sm {
+  border-radius: 0;
+  font-size: 14px;
+  flex: 1; /* makes input take full available width */
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+}
+
+.subscribe-box button {
+  background: #e74c3c; /* red like in the image */
+  color: #fff;
+  border: none;
+  border-radius: 0;
+  padding: 16px 16px; 
+  font-size: 10px;
+  cursor: pointer;
+}
+
+.subscribe-box button:hover {
+  background: #c0392b; /* darker red hover */
+}
+@media (max-width: 768px) {
+  .footer p {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+</style>
+
+
+
+
+
+
+
+
+
+
+/* ================================
+   Default styles end here
+   ================================ */
