@@ -323,7 +323,7 @@ b{
 .services p{
 	margin-top: 20px;
 }
-@media(max-width: 768px;){
+@media(max-width: 768px){
 .services{
 	margin-top: 50px;
 	padding: 50px;
@@ -365,7 +365,7 @@ b{
 	margin-top: 20px;
 }
 
-@media(max-width: 768px;){
+@media(max-width: 768px){
 	.sales{
 		padding: 30px;
 		min-height: 500px;
@@ -437,50 +437,67 @@ b{
     margin-right: auto;
   }
 }
-/*mission section css */
+/* Mission Section */
 .mission{
-	padding: 80px;
-	min-height: 600px;
-	padding-top:120px; 
+    padding:100px 0;
+    background:#fff;
 }
+
 .mission #left-side{
-	margin-bottom: 50px;
+    padding-top:40px;
 }
+
 .mission #left-side h1{
-	font-family: 'Montserrat',sans-serif;
-	font-size: 30px;
-	  line-height: 1.3; /* prevents text from overlapping */
-  margin-bottom: 15px; /* space after heading */
+    font-family:'Montserrat',sans-serif;
+    font-size:42px;
+    font-weight:700;
+    margin-bottom:30px;
+    color:#222;
 }
+
 .mission #left-side p{
-	margin-top: 20px;
-	font-size: 17px;
-	text-align: justify;
-	line-height: 30px;
+    font-size:18px;
+    line-height:1.9;
+    color:#555;
+    margin-bottom:25px;
 }
+
+.mission #left-side .btn{
+    margin-top:15px;
+    padding:12px 30px;
+    border-radius:0;
+}
+.mission #right-side{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
 .mission #right-side img{
-	min-height: 500px;
-	width:650px;
-	margin-left: 120px;
+     width:350px !important;
+    max-width:350px !important;
+    height:auto !important;
+    min-height:0 !important;
+    margin:0 auto !important;
+    border:3px solid red !important;
+    transform: rotate(180deg);
 }
-@media(max-width: 834px;){
-	.mission{
-		padding: 80px;
-		min-height: 600px;
-		margin-top: 20px;
-		padding-right: 20px;
-		padding-left: 20px;
-	}
-	.mission #right-side img{
-		margin-top: 60px;
-		height: 100%;
-		width: 100%;
-		margin-left: auto;
-		margin-right: auto;
-	}
-	.mission #left-side h1{
-		font-size: 17px;
-	}
+
+/* Mobile Responsive */
+@media (max-width:768px){
+
+    .mission{
+        padding:60px 20px;
+        text-align:center;
+    }
+
+    .mission #left-side h1{
+        font-size:30px;
+    }
+
+    .mission #right-side{
+        margin-top:40px;
+    }
 }
 /*client section css */
 .clients{
@@ -506,7 +523,7 @@ b{
 	cursor: pointer;
 	margin: 40px 0;
 }
-@media(max-width: 768px;){
+@media(max-width: 768px){
 	.clients p{
 	margin-left: 20px;
 	margin-right: 20px;
@@ -657,17 +674,4 @@ b{
     margin-right: 20px;
   }
 }
-</style>
 
-
-
-
-
-
-
-
-
-
-/* ================================
-   Default styles end here
-   ================================ */

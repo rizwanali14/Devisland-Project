@@ -458,10 +458,14 @@ b{
 	text-align: justify;
 	line-height: 30px;
 }
-.mission #right-side img{
-	min-height: 500px;
-	width:650px;
-	margin-left: 120px;
+#right-side img{
+    width:350px !important;
+    max-width:350px !important;
+    height:auto !important;
+    min-height:0 !important;
+    margin:0 auto !important;
+    border:3px solid red !important;
+    transform: rotate(180deg);
 }
 @media(max-width: 834px;){
 	.mission{
